@@ -1,6 +1,8 @@
 from flask import Flask, jsonify,request,g
 from flask_babel import Babel
 from flask_babel import gettext
+from flask_cors import CORS
+
 
 
 
@@ -19,10 +21,11 @@ def get_locale():
     if locale:
         return locale.split(',')[0][:2]
     
-    return request.accept_languages.best_match(['es','en','fr'])
+    return request.accept_languages.best_match(['es','en'])
     
 
 app = Flask(__name__)
+CORS(app)
 app.config['BABEL_DEFAULT_LOCALE'] = 'es' # es, fr
 app.config['BABEL_TRANSLATION_DIRECTORIES'] = 'translations'     
 
@@ -41,7 +44,7 @@ def index():
         g.user = user(locale)
     return jsonify({'message': gettext("Hello world!!")})
 
-@app.route('/save', methods=['GET'])
+@app.route('/save', methods =['POST'])
 def save():
     data=request.get_json()
     locale= data.get('locale')
@@ -50,7 +53,7 @@ def save():
     
     return jsonify(message=gettext("Save sucesfuly"))
 
-@app.route('/update')
+@app.route('/update', methods =['POST'])
 def update():
     data=request.get_json()
     locale= data.get('locale')
@@ -58,7 +61,7 @@ def update():
         g.user = user(locale)
     return jsonify(message=gettext("Update changes"))
 
-@app.route('/delete')
+@app.route('/delete', methods =['DELETE'])
 def delete():
     data=request.get_json()
     locale= data.get('locale')
