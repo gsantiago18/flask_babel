@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-02 16:19-0500\n"
+"POT-Creation-Date: 2024-08-05 14:28-0500\n"
 "PO-Revision-Date: 2024-08-02 16:15-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -18,17 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: app.py:15
+#: app.py:28
 msgid "Hello world!!"
 msgstr "Hola Mundo"
 
-#: app.py:19
+#: app.py:32
 msgid "Save sucesfuly"
 msgstr "Guardo corectamente"
 
-#: app.py:23
+#: app.py:36
+msgid "Update changes"
+msgstr "Actualizacion guardada"
+
+#: app.py:40
+msgid "Delete  sucesfully"
+msgstr "Eliminado corectamente"
+
+#: app.py:44
 msgid "Saves changes"
 msgstr "Cambios guardados"
-
 
 

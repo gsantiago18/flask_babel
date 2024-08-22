@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-02 16:19-0500\n"
+"POT-Creation-Date: 2024-08-05 16:20-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: app.py:15
+#: app.py:42
 msgid "Hello world!!"
 msgstr ""
 
-#: app.py:19
+#: app.py:51
 msgid "Save sucesfuly"
 msgstr ""
 
-#: app.py:23
+#: app.py:59
+msgid "Update changes"
+msgstr ""
+
+#: app.py:67
+msgid "Delete  sucesfully"
+msgstr ""
+
+#: app.py:75
 msgid "Saves changes"
 msgstr ""
 
